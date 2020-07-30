@@ -1,6 +1,6 @@
 # Responsive Web Design Project - Build a Survey Form (HTML & CSS)
 
-### This is a FreeCodeCamp project that needs to meet the following criteria:
+### This is a freeCodeCamp project that needs to meet the following criteria:
     1. Title with **id="title"** in H1 sized text.
     2. Short explanation with **id="description"** in P sized text.
     3. Has a **form** with **id="survey-form"**.
@@ -20,7 +20,7 @@
 
 ### Personal Objectives:     
     1. Make a web page using HTML & CSS.
-    2. Meet FreeCodeCamp page requirments.
+    2. Meet freeCodeCamp page requirments.
     3. Practice using GitHub, Git and the Linux terminal.
     4. Practice using Microsoft Visual Studio Code.
     

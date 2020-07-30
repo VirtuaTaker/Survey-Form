@@ -12,21 +12,39 @@
         <p id="description">Please let us know below what is your gaming platform of choice:</p>
         <!-- FCC third requirement - form with id="survey-form"-->
         <form id="survey-form">
+            <!-- FCC thirteenth requirement (start) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->
             <label for="pc">
-                <input id="pc" type="radio" name="favorite-platform"> PC
+                <input id="pc" type="radio" name="favorite-platform" value="pc"> PC
             </label>
             <label for="ps4">
-                <input id="ps4" type="radio" name="favorite-platform"> PS4
+                <input id="ps4" type="radio" name="favorite-platform" value="ps4"> PS4
             </label>
             <label for="xbox-one">
-                <input id="xbox-one" type="radio" name="favorite-platform"> Xbox One
+                <input id="xbox-one" type="radio" name="favorite-platform" value="xbox-one"> Xbox One
             </label>
             <label for="nintendo-switch">
-                <input id="nintendo-switch" type="radio" name="favorite-platform"> Nintendo Switch
+                <input id="nintendo-switch" type="radio" name="favorite-platform" value="nintendo-switch"> Nintendo Switch
             </label>
             <label for="mobile">
-                <input id="mobile" type="radio" name="favorite-platform"> Mobile
+                <input id="mobile" type="radio" name="favorite-platform" value="mobile"> Mobile
             </label>
+            <!-- FCC thirteenth requirement (end) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->
+            
+            <!-- FCC fourteenth requirement (start) - Inside the form element, you should be able select several fields from a series of checkboxes, each of which must have a **value** attribute.-->
+            <p>Why is this your favorite gaming platform? Please select all that apply:</p>
+            <label for="exclusive-games">
+                <input id="exclusive-games" type="checkbox" name="reasons" value="exclusive-games">
+                Exclusive Games
+            </label>
+            <label for="cost-of-games">
+                <input id="cost-of-games" type="checkbox" name="reasons" value="cost-of-games">
+                Cost of Games
+            </label>
+            <label for="game-genre-variety ">
+                <input id="game-genre-variety" type="checkbox" name="reasons" value="game-genre">
+                Game Genere Variety
+            </label>
+            <!-- FCC fourteenth requirement (end) - Inside the form element, you should be able select several fields from a series of checkboxes, each of which must have a **value** attribute.-->
         </form>
         
         <!-- FCC test suite. -->
