@@ -36,15 +36,37 @@
                 <input id="exclusive-games" type="checkbox" name="reasons" value="exclusive-games">
                 Exclusive Games
             </label>
-            <label for="cost-of-games">
-                <input id="cost-of-games" type="checkbox" name="reasons" value="cost-of-games">
-                Cost of Games
+            <label for="price-of-games">
+                <input id="price-of-games" type="checkbox" name="reasons" value="price-of-games">
+                Price of Games
             </label>
             <label for="game-genre-variety ">
-                <input id="game-genre-variety" type="checkbox" name="reasons" value="game-genre">
+                <input id="game-genre-variety" type="checkbox" name="reasons" value="game-genre-variety">
                 Game Genere Variety
             </label>
+            <label for="backwards-compatibility">
+                <input id="backwards-compatibility" type="checkbox" name="reasons" value="backwards-compatibility">
+                Backwards Compatibility
+            </label>
+            <label for="form-factor">
+                <input id="form-factor" type="checkbox" name="reasons" value="form-factor">
+                Form Factor
+            </label>
+            <label for="brand-loyalty">
+                <input id="brand-loyalty" type="checkbox" name="reasons" value="brand-loyalty">
+                Brand Loyalty
+            </label>
             <!-- FCC fourteenth requirement (end) - Inside the form element, you should be able select several fields from a series of checkboxes, each of which must have a **value** attribute.-->
+
+            <!-- FCC twelfth requirement (start) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**.-->
+            <p>What type of gamer are you?</p>
+            <select id="dropdown" name="gamer-type" required>
+                <option selected disabled value="">Choose the type of gamer you are</option>
+                <option value="casual">Casual Gamer</option>
+                <option value="hardcore">Hardcore Gamer</option>
+                <option value="pro">Pro Gamer</option>
+            </select>
+            <!-- FCC twelfth requirement (end) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**.-->
         </form>
         
         <!-- FCC test suite. -->
