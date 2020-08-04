@@ -6,11 +6,11 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <!-- FCC first requirement - h1 text with id="title".-->
+        <!-- FCC first requirement - h1 text with id="title". -->
         <h1 id="title">Favorite Gaming Platform Survey</h1>
-        <!-- FCC second requirement - short explanation in p sized text with id="description"-->
+        <!-- FCC second requirement - short explanation in p sized text with id="description" -->
         <p id="description">Please let us know below what is your gaming platform of choice:</p>
-        <!-- FCC third requirement - form with id="survey-form"-->
+        <!-- FCC third requirement - form with id="survey-form" -->
         <form id="survey-form">
             <!-- FCC thirteenth requirement (start) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->
             <label for="pc">
@@ -28,9 +28,9 @@
             <label for="mobile">
                 <input id="mobile" type="radio" name="favorite-platform" value="mobile"> Mobile
             </label>
-            <!-- FCC thirteenth requirement (end) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->
+            <!-- FCC thirteenth requirement (end) -->
             
-            <!-- FCC fourteenth requirement (start) - Inside the form element, you should be able select several fields from a series of checkboxes, each of which must have a **value** attribute.-->
+            <!-- FCC fourteenth requirement (start) - Inside the form element, you should be able select several fields from a series of checkboxes, each of which must have a **value** attribute. -->
             <p>Why is this your favorite gaming platform? Please select all that apply:</p>
             <label for="exclusive-games">
                 <input id="exclusive-games" type="checkbox" name="reasons" value="exclusive-games">
@@ -56,17 +56,45 @@
                 <input id="brand-loyalty" type="checkbox" name="reasons" value="brand-loyalty">
                 Brand Loyalty
             </label>
-            <!-- FCC fourteenth requirement (end) - Inside the form element, you should be able select several fields from a series of checkboxes, each of which must have a **value** attribute.-->
+            <!-- FCC fourteenth requirement (end) -->
 
-            <!-- FCC twelfth requirement (start) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**.-->
+            <!-- FCC twelfth requirement (start) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**. -->
             <p>What type of gamer are you?</p>
             <select id="dropdown" name="gamer-type" required>
-                <option selected disabled value="">Choose the type of gamer you are</option>
+                <option selected disabled value="">Please select the option that best describes you</option>
                 <option value="casual">Casual Gamer</option>
                 <option value="hardcore">Hardcore Gamer</option>
                 <option value="pro">Pro Gamer</option>
             </select>
-            <!-- FCC twelfth requirement (end) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**.-->
+            <!-- FCC twelfth requirement (end) -->
+
+            <p>Please provide your personal information:</p>
+            <!-- FCC tenth requirement (name) - For the name, email, and number input fields inside the form show the corresponding labels that describe the purpose of each field with the following ids: **id="name-label"**, **id="email-label"**, and **id="number-label"**. -->
+            <label id="name-label" for="name">Name</label>
+            <!-- FCC fourth requirement - Inside the form element, require to enter a name in a field with **id="name"**. 
+                 FCC eleventh requriement - For the name, email, and number input fields, show a placeholder text that gives a description or instructions for each field. -->
+                <input id="name" type="text" name="name" placeholder="John Doe" required>
+            <!-- FCC tenth requirement (email) - For the name, email, and number input fields inside the form show the corresponding labels that describe the purpose of each field with the following ids: **id="name-label"**, **id="email-label"**, and **id="number-label"**. -->
+            <label id="email-label" for="email">Email</label>
+            <!-- FCC fifth requirement - Inside the form element, require to enter an email in a field with **id="email"**. 
+                 FCC sixth requirement - If entering an email that is not formatted correctly, show an HTML5 validation error. 
+                 FCC eleventh requriement - For the name, email, and number input fields, show a placeholder text that gives a description or instructions for each field. -->
+                <input id="email" type="email" name="email" placeholder="johndoe@website.com" required>
+            <!-- FCC tenth requirement (number) - For the name, email, and number input fields inside the form show the corresponding labels that describe the purpose of each field with the following ids: **id="name-label"**, **id="email-label"**, and **id="number-label"**. -->
+            <label id="number-label" for="age">Age</label>
+            <!-- FCC Sevenths reqirement - Inside the form, require to enter a number in a field with **id="number"**. 
+                 FCC eighth requirment - When entering non-numbers in the number input, show an HTML5 validation error. 
+                 FCC ninth requirement - When entering numbers outside the range of the number input, which are defined by the **min** and **max** attributes, show an HTML5 validation error. 
+                 FCC eleventh requriement - For the name, email, and number input fields, show a placeholder text that gives a description or instructions for each field. -->
+                <input id="number" type="number" name="age" min="18" max="99" placeholder="##">
+
+            <p>In your own words please explain why your favorite console is the best one to play games in:</p>
+            <!-- FCC fifthteenth requirement - Inside the form element, include a **textarea** at the end for additional comments. -->
+            <textarea id="explanation" name="explanation" placeholder="Enter your explanation here"></textarea>
+            <!-- FCC sixteenth requirement - Inside the form element, include a button with **id="submit"** to submit all my inputs. -->
+            <button id="submit" type="submit">
+                Submit
+            </button>
         </form>
         
         <!-- FCC test suite. -->
