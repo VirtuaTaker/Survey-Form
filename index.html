@@ -6,29 +6,27 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-    <div class="heading">
         <!-- FCC first requirement - h1 text with id="title". -->
         <h1 id="title">Favorite Gaming Platform Survey</h1>
         <!-- FCC second requirement - short explanation in p sized text with id="description" -->
-        <p id="description">Thank you for taking the time and participating in this gaming survey</p>
-    </div>    
+        <p id="description" class="sub">Thank you for taking the time and participating in this gaming survey</p>    
         <!-- FCC third requirement - form with id="survey-form" -->
         <form id="survey-form">
-            <p>Please let us know below what is your gaming platform of choice:</p>
+            <p>Select your favorite gaming platform:</p>
             <!-- FCC thirteenth requirement (start) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->
-            <label for="pc">
-                <input id="pc" type="radio" name="favorite-platform" value="pc"> PC
+            <label for="pc" class="radio">
+                <input id="pc" type="radio" name="favorite-platform" value="pc" class="test"> PC
             </label>
-            <label for="ps4">
+            <label for="ps4" class="radio">
                 <input id="ps4" type="radio" name="favorite-platform" value="ps4"> PS4
             </label>
-            <label for="xbox-one">
+            <label for="xbox-one" class="radio">
                 <input id="xbox-one" type="radio" name="favorite-platform" value="xbox-one"> Xbox One
             </label>
-            <label for="nintendo-switch">
+            <label for="nintendo-switch" class="radio">
                 <input id="nintendo-switch" type="radio" name="favorite-platform" value="nintendo-switch"> Nintendo Switch
             </label>
-            <label for="mobile">
+            <label for="mobile" class="radio">
                 <input id="mobile" type="radio" name="favorite-platform" value="mobile"> Mobile
             </label>
             <!-- FCC thirteenth requirement (end) -->
@@ -64,7 +62,7 @@
             <!-- FCC twelfth requirement (start) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**. -->
             <p>What type of gamer are you?</p>
             <select id="dropdown" name="gamer-type" required>
-                <option selected disabled value="">Please select the option that best describes you</option>
+                <option selected disabled class="placeholder" value="">Please select the option that best describes you</option>
                 <option value="casual">Casual Gamer</option>
                 <option value="hardcore">Hardcore Gamer</option>
                 <option value="pro">Pro Gamer</option>

@@ -1,23 +1,49 @@
-/* Inserting background.jpg as background image */
+/* Inserting background2.jpg as background image & setting font styles */
 body{
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
 }
 /* Styling heading */
-.heading{
-    font-family: 'Courier New', Courier, monospace;
+h1{
     text-align: center;
-    font-size: 2em;
-    background-color: beige;
-    margin: 1em 8em 0em 8em;
-    padding: .2em 0em .4em 0em;
-    border-radius: 25%;
+    font-size: 6em;
+    color: darkslateblue;
+    margin: 1em 1em 0em 1em;
+}
+/* Styling subheading */
+.sub{
+    text-align: center;
+    font-size: 4em;
+    color: darkslateblue;
+    margin: 0em 1em 1em 1em;
+    font-weight: bold;
 }
 /* Styling form */
 form{
     display: flex;
     flex-flow: column;
-    background-color: beige;
-    margin: 2em 32em 2em 32em;
-    padding: 3em;
+    font-size: 2em;
+    color: white;
+    margin: 0em 18em 1em 18em;
+    background-color: cornflowerblue;
+    padding: 1.5em 1.5em 1.5em 1.5em;
     border-radius: 5%;
+}
+/* Styling dropdown option */
+select{
+    background-color: white;
+    margin: 0em 1em 0em 1em;
+}
+/* Styling button */
+button{
+    background-color: darkslateblue;
+    color: white;
+    margin: 1em;
+    cursor: pointer;
+    height: 2em;
+    font-size: larger;
+    font-weight: bold;
 }

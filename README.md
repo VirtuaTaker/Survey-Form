@@ -20,7 +20,7 @@
 
 ### Personal Objectives:     
     1. Make a web page using HTML & CSS.
-    2. Meet freeCodeCamp page requirments.
+    2. Meet freeCodeCamp page requirements.
     3. Practice using GitHub, Git and the Linux terminal.
     4. Practice using Microsoft Visual Studio Code.
     
