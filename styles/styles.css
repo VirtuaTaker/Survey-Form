@@ -1,3 +1,11 @@
+/* TO DO:
+1. Learn how to custom style readio buttons and checkboxes.
+2. Learn how to style dropdwon arrow and change placeholder text color.
+3. Learn how to style text boxes.
+4. Learn how to style number boxes and their arrows.
+5. Add classes so not to style elements directly. 
+*/
+
 /* Inserting background2.jpg as background image & setting font styles */
 body{
     background-image: url("../images/background2.png");
@@ -27,7 +35,7 @@ form{
     flex-flow: column;
     font-size: 2em;
     color: white;
-    margin: 0em 18em 1em 18em;
+    margin: 0em 7em 1em 7em;
     background-color: cornflowerblue;
     padding: 1.5em 1.5em 1.5em 1.5em;
     border-radius: 5%;
@@ -36,6 +44,10 @@ form{
 select{
     background-color: white;
     margin: 0em 1em 0em 1em;
+}
+/* Making dropdown placeholder text gray */
+.placeholder{
+    color: gray;
 }
 /* Styling button */
 button{
