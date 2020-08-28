@@ -5,29 +5,39 @@
         <title>FCC Project 2: Survey Form</title>
         <link rel="stylesheet" href="styles/styles.css">
     </head>
-    <body>
+    <body class="consoles-background">
         <!-- FCC first requirement - h1 text with id="title". -->
-        <h1 id="title">Favorite Gaming Platform Survey</h1>
+        <h1 id="title" class="heading">Favorite Gaming Platform Survey</h1>
         <!-- FCC second requirement - short explanation in p sized text with id="description" -->
         <p id="description" class="sub">Thank you for taking the time and participating in this gaming survey</p>    
         <!-- FCC third requirement - form with id="survey-form" -->
-        <form id="survey-form">
+        <form id="survey-form" class="form-style">
             <p>Select your favorite gaming platform:</p>
-            <!-- FCC thirteenth requirement (start) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->
-            <label for="pc" class="radio">
-                <input id="pc" type="radio" name="favorite-platform" value="pc" class="test"> PC
-            </label>
+            <!-- FCC thirteenth requirement (start) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->            
+            <label for="pc" class="radio">                                                                                                 
+                <input id="pc" type="radio" name="favorite-platform" value="pc">
+                <span class="radio-style"></span>
+                <span class="radio-choice"> PC</span>                                                                                                   
+            </label>                         
             <label for="ps4" class="radio">
-                <input id="ps4" type="radio" name="favorite-platform" value="ps4"> PS4
+                <input id="ps4" type="radio" name="favorite-platform" value="ps4">
+                <span class="radio-style"></span>
+                <span class="radio-choice"> PS4</span>
             </label>
             <label for="xbox-one" class="radio">
-                <input id="xbox-one" type="radio" name="favorite-platform" value="xbox-one"> Xbox One
+                <input id="xbox-one" type="radio" name="favorite-platform" value="xbox-one">
+                <span class="radio-style"></span>
+                <span class="radio-choice"> Xbox One</span>
             </label>
             <label for="nintendo-switch" class="radio">
-                <input id="nintendo-switch" type="radio" name="favorite-platform" value="nintendo-switch"> Nintendo Switch
+                <input id="nintendo-switch" type="radio" name="favorite-platform" value="nintendo-switch">
+                <span class="radio-style"></span>
+                <span class="radio-choice"> Nintendo Switch</span>
             </label>
             <label for="mobile" class="radio">
-                <input id="mobile" type="radio" name="favorite-platform" value="mobile"> Mobile
+                <input id="mobile" type="radio" name="favorite-platform" value="mobile">
+                <span class="radio-style"></span>
+                <span class="radio-choice"> Mobile</span>
             </label>
             <!-- FCC thirteenth requirement (end) -->
             
@@ -93,7 +103,7 @@
             <!-- FCC fifthteenth requirement - Inside the form element, include a **textarea** at the end for additional comments. -->
             <textarea id="explanation" name="explanation" placeholder="Enter your explanation here"></textarea>
             <!-- FCC sixteenth requirement - Inside the form element, include a button with **id="submit"** to submit all my inputs. -->
-            <button id="submit" type="submit">
+            <button id="submit" type="submit" class="button-style">
                 Submit
             </button>
         </form>

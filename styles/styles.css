@@ -3,25 +3,24 @@
 2. Learn how to style dropdwon arrow and change placeholder text color.
 3. Learn how to style text boxes.
 4. Learn how to style number boxes and their arrows.
-5. Add classes so not to style elements directly. 
 */
 
 /* Inserting background2.jpg as background image & setting font styles */
-body{
+.consoles-background{
     background-image: url("../images/background2.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Courier New', Courier, monospace;
     font-size: 10px;
 }
-/* Styling heading */
-h1{
+/* Use this for headings */
+.heading{
     text-align: center;
     font-size: 6em;
     color: darkslateblue;
     margin: 1em 1em 0em 1em;
 }
-/* Styling subheading */
+/* Use this for subheadings */
 .sub{
     text-align: center;
     font-size: 4em;
@@ -30,7 +29,7 @@ h1{
     font-weight: bold;
 }
 /* Styling form */
-form{
+.form-style{
     display: flex;
     flex-flow: column;
     font-size: 2em;
@@ -40,17 +39,63 @@ form{
     padding: 1.5em 1.5em 1.5em 1.5em;
     border-radius: 5%;
 }
-/* Styling dropdown option */
-select{
-    background-color: white;
-    margin: 0em 1em 0em 1em;
+/* Customizing radio label */ 
+.radio{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: .1em;
 }
-/* Making dropdown placeholder text gray */
-.placeholder{
-    color: gray;
+
+/* Hiding radio button */
+.radio input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+/* Custom radio button */
+.radio-style{
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    background-color: white;
+    border-radius: 50%;
+}
+/* On mouse over add gray background */
+.radio:hover input ~ .radio-style{
+    background-color: lightgrey;
+}
+/* Radio button checked return to white background */
+.radio input:checked ~ .radio-style{
+    background-color: white;
+}
+/* Radio indicator hidden (unchecked) */
+.radio-style::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Radio indicator shown (checked) */
+.radio input:checked ~ .radio-style::after{
+    display: block;
+}
+/* Radio indicator style */
+.radio .radio-style::after{
+    width: .5em;
+    height: .5em;
+    background: darkslateblue;
+    border-radius: 50%;
+    right: .25em;
+    top: .25em;
+}
+/* Customizing radio choices */
+.radio-choice{
+    margin-left: 1.5em;    
 }
 /* Styling button */
-button{
+.button-style{
     background-color: darkslateblue;
     color: white;
     margin: 1em;
