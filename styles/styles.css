@@ -45,7 +45,7 @@
     position: relative;
     cursor: pointer;
     padding: .1em;
-}
+} 
 
 /* Hiding radio button */
 .radio input{
@@ -63,7 +63,7 @@
     background-color: white;
     border-radius: 50%;
 }
-/* On mouse over add gray background */
+/* On mouse over add gray background radio button */
 .radio:hover input ~ .radio-style{
     background-color: lightgrey;
 }
@@ -92,6 +92,59 @@
 }
 /* Customizing radio choices */
 .radio-choice{
+    margin-left: 1.5em;    
+}
+/* Customizing checkbox label */
+.checkbox{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    padding: .1em;
+}
+/* Hiding checkbox button */
+.checkbox input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    cursor: pointer;
+}
+/* Custom checkbox button */
+.checkbox-style{
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    background-color: white;
+}
+/* On mouse over add gray background to checkbox button */
+.checkbox:hover input ~ .checkbox-style{
+    background-color: lightgrey;
+}
+/* Checkbox button checked return to white background */
+.checkbox input:checked ~ .checkbox-style{
+    background-color: white;
+}
+/* Checkbox indicator hidden (unchecked) */
+.checkbox-style::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/* Checkbox indicator shown (checked) */
+.checkbox input:checked ~ .checkbox-style::after{
+    display: block;
+}
+/* Checkbox indicator style */
+.checkbox .checkbox-style::after{      
+  left: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid darkslateblue;
+  border-width: 0 5px 5px 0;
+  rotate: 45deg;     
+}
+/* Customizing checkbox choices */
+.checkbox-choice{
     margin-left: 1.5em;    
 }
 /* Styling button */
