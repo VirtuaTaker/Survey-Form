@@ -6,12 +6,16 @@
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body class="consoles-background">
+
         <!-- FCC first requirement - h1 text with id="title". -->
         <h1 id="title" class="heading">Favorite Gaming Platform Survey</h1>
+
         <!-- FCC second requirement - short explanation in p sized text with id="description" -->
-        <p id="description" class="sub">Thank you for taking the time and participating in this gaming survey</p>    
+        <p id="description" class="sub">Thank you for taking the time and participating in this gaming survey</p> 
+
         <!-- FCC third requirement - form with id="survey-form" -->
         <form id="survey-form" class="form-style">
+
             <p>Select your favorite gaming platform:</p>
             <!-- FCC thirteenth requirement (start) - Inside the form element, show a field from one or more groups of radio buttons. Each group should be grouped using the **name** attribute. -->            
             <label for="pc" class="radio">                                                                                                 
@@ -77,12 +81,14 @@
 
             <!-- FCC twelfth requirement (start) - Inside the form element, show an option from a dropdown that has a corresponding **id="dropdown"**. -->
             <p>What type of gamer are you?</p>
+            <div class="custom-select">
             <select id="dropdown" name="gamer-type" required>
                 <option selected disabled class="placeholder" value="">Please select the option that best describes you</option>
                 <option value="casual">Casual Gamer</option>
                 <option value="hardcore">Hardcore Gamer</option>
                 <option value="pro">Pro Gamer</option>
             </select>
+            </div>
             <!-- FCC twelfth requirement (end) -->
 
             <p>Please provide your personal information:</p>
