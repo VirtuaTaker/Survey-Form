@@ -156,23 +156,21 @@
     font-size: larger;
     font-weight: bold;
 }
-.custom-select{
-    position: relative;
-}
 /* Styling dropdown */
 #dropdown{
-    display: block;
-    background-color: white;
-    color: darkslateblue;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
-    cursor: pointer;    
+    text-align: center;
+    background-color: white;
+    width: 25em;
 }
-/* Adding light gray background on hover to select box */
+/* Adding a light gray background and changing cursor to pointer on hover */
 #dropdown:hover{
+    cursor: pointer;
     background-color: lightgray;
+}
+
+#dropdown::after{
+    content: 'V';
 }
