@@ -157,20 +157,33 @@
     font-weight: bold;
 }
 /* Styling dropdown */
-#dropdown{
+.styled-select{
+    width: 500px;
+    height: 35px;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    display: inline-block;
+    position: relative;
+    background: url("../images/dropdown-arrow.png") no-repeat right white;
+    background-size: 25px;
+}
+/* Hiding dropdown and aligning text */
+.styled-select select{
+    background: transparent;
     appearance: none;
-    -moz-appearance: none;
     -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 500px;
+    height: 35px;
+    left: 0;
+    top: 0;
     text-align: center;
-    background-color: white;
-    width: 25em;
 }
-/* Adding a light gray background and changing cursor to pointer on hover */
-#dropdown:hover{
+/* Changing cursor to pointer on hover */
+.styled-select select:hover{
     cursor: pointer;
-    background-color: lightgray;
 }
-
-#dropdown::after{
-    content: 'V';
+/* */
+.placeholder{
+    color: dimgray;
 }
