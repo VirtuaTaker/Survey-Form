@@ -1,7 +1,6 @@
 /* TO DO:
-2. Learn how to style dropdwon arrow and change placeholder text color.
-3. Learn how to style text boxes.
-4. Learn how to style number boxes and their arrows.
+2. Learn how change select placeholder text color.
+4. Learn how to number arrows.
 */
 
 /* Inserting background2.jpg as background image & setting font styles */
@@ -161,7 +160,6 @@
     width: 500px;
     height: 35px;
     overflow: hidden;
-    overflow: -moz-hidden-unscrollable;
     display: inline-block;
     position: relative;
     background: url("../images/dropdown-arrow-up.png") no-repeat right white;
@@ -187,13 +185,55 @@
     background: url("../images/dropdown-arrow.png") no-repeat right white;
     background-size: 25px;   
 }
-/* Changing select placeholder text color and making it italic */
-
-/* Reverting select options to black */
-
+/* Changing select placeholder text color and making it italic (THIS ONE IS NOT WORKING)*/
+select option:first-of-type{
+    color: darkgrey;
+    font-style: italic;
+}
 /* Chaning placeholder text color and making it italic */
 ::placeholder{
     color: darkgrey;
     opacity: 1;
     font-style: italic;
+}
+/* Styling name input box */
+#name{
+    margin: .25em 1em .25em 0em;
+    height: 2em;
+    width: 40%;
+}
+/* Adding border on name input box when selected */
+#name:focus{
+    border: solid 3px darkslateblue;
+}
+/* Styling email input box */
+#email{
+    margin: .25em 1em .25em 0em;
+    height: 2em;
+    width: 40%;
+}
+/* Adding border on email input box when selected */
+#email:focus{
+    border: solid 3px darkslateblue;
+}
+/* Styling age input box (CHANGE ARROW TO GO WITH THEME OF PAGE)*/
+#number{
+    margin: .25em 1em .25em 0em;
+    height: 2em;
+    width: 5%;
+    text-align: center;
+}
+/* Adding border on age input box when selected */
+#number:focus{
+    border: solid 3px darkslateblue;
+}
+/* Styling textarea box and making it not resizable */
+#explanation{
+    height: 10em;
+    font-size: .95em;
+    resize: none;
+}
+/* Adding border on textarea box */
+#explanation:focus{
+    border: solid 3px darkslateblue;
 }
