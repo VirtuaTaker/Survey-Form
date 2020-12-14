@@ -163,8 +163,7 @@
     display: inline-block;
     position: relative;
     background: url("../images/dropdown-arrow-up.png") no-repeat right white;
-    background-size: 25px;
-    border: solid 2px darkslateblue;    
+    background-size: 25px;   
 }
 /* Hiding dropdown and aligning text */
 .styled-select select{
@@ -177,16 +176,16 @@
     left: 0;
     top: 0;
     text-align: center;
-    border: solid 1px darkslateblue;
 }
-/* Changing cursor to pointer on hover and dropdown arrow pointing up */
+/* Changing cursor to pointer on hover, dropdown arrow pointing up and adding border */
 .styled-select select:hover{
     cursor: pointer;
     background: url("../images/dropdown-arrow.png") no-repeat right white;
-    background-size: 25px;   
+    background-size: 25px;
+    border: solid 3px darkslateblue;   
 }
-/* Changing select placeholder text color and making it italic (THIS ONE IS NOT WORKING)*/
-select option:first-of-type{
+/* Changing select placeholder text color and making it italic */
+select:required:invalid{
     color: darkgrey;
     font-style: italic;
 }
@@ -216,7 +215,7 @@ select option:first-of-type{
 #email:focus{
     border: solid 3px darkslateblue;
 }
-/* Styling age input box (CHANGE ARROW TO GO WITH THEME OF PAGE)*/
+/* Styling age input box */
 #number{
     margin: .25em 1em .25em 0em;
     height: 2em;
@@ -226,6 +225,15 @@ select option:first-of-type{
 /* Adding border on age input box when selected */
 #number:focus{
     border: solid 3px darkslateblue;
+}
+/* Removing age input box arrows/spinners Firefox */
+input[type=number]{
+    -moz-appearance: textfield;
+}
+/* Removing age input box arrows/spinners Chrome, Safari, Edge and Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 }
 /* Styling textarea box and making it not resizable */
 #explanation{
