@@ -139,7 +139,7 @@
   height: 10px;
   border: solid darkslateblue;
   border-width: 0 5px 5px 0;
-  rotate: 45deg;     
+  transform: rotate(45deg); 
 }
 /* Customizing checkbox choices */
 .checkbox-choice{
@@ -176,6 +176,8 @@
     left: 0;
     top: 0;
     text-align: center;
+    text-align-last: center;
+    font-size: 20px;
 }
 /* Changing cursor to pointer on hover, dropdown arrow pointing up and adding border */
 .styled-select select:hover{
@@ -200,6 +202,8 @@ select:required:invalid{
     margin: .25em 1em .25em 0em;
     height: 2em;
     width: 40%;
+    font-size: 20px;
+    padding-left: .5em;
 }
 /* Adding border on name input box when selected */
 #name:focus{
@@ -210,6 +214,8 @@ select:required:invalid{
     margin: .25em 1em .25em 0em;
     height: 2em;
     width: 40%;
+    font-size: 20px;
+    padding-left: .5em;
 }
 /* Adding border on email input box when selected */
 #email:focus{
@@ -221,6 +227,7 @@ select:required:invalid{
     height: 2em;
     width: 5%;
     text-align: center;
+    font-size: 20px;
 }
 /* Adding border on age input box when selected */
 #number:focus{
@@ -238,10 +245,15 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button{
 /* Styling textarea box and making it not resizable */
 #explanation{
     height: 10em;
-    font-size: .95em;
+    font-size: 20px;
     resize: none;
+    padding: .5em;
 }
 /* Adding border on textarea box */
 #explanation:focus{
     border: solid 3px darkslateblue;
+}
+/* Removing Chrome outline */
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }
